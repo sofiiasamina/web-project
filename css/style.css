@@ -1,0 +1,86 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/bg-ironman.jpg) no-repeat center;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: darken;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    margin:0;
+    padding:0;
+    padding-left: 150px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin: 0 900px 120px 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+.logo{
+    margin-right: 70px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.masthead-hero{
+    font-family: 'Playfair Display', serif;
+}
+.real-name{
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.real-name::before, .real-name::after{
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 38px;
+}
+.real-name::before {
+    left: 50px;
+    top: -3px;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+.real-name::after {
+    left: -9px;
+    top: calc(100% + 3px);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+.hero-name{
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+.short-info{
+    font-size: 16px;
+    line-height: 150%;
+    width: 460px;
+    margin-bottom: 30px;
+}
+.preview-button{
+    font-size: 15px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #fff;
+    background: #9D2929;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
