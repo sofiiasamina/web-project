@@ -9,17 +9,17 @@ body{
     background-blend-mode: darken;
     color: white;
     background-repeat: no-repeat;
-    background-size: auto auto;
+    background-size: auto;
+    background-attachment: fixed;
     margin:0;
     padding:0;
-    padding-left: 150px;
 }
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
-    margin: 0 900px 120px 0;
+    margin: 0 900px 120px 150px;
     font-size: 14px;
     line-height: 16px;
 }
@@ -30,10 +30,28 @@ body{
     border-radius: 50%;
     object-fit: cover;
 }
-.masthead-hero{
-    font-family: 'Playfair Display', serif;
+.header-tab-item{
+    cursor: pointer;
+}
+.tab-item-active{
+    color: #9D2929;
+    font-weight: bold;
+}
+.header-tabs-content{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.main{
+    padding-left: 150px;
+}
+.content-block{
+    margin-bottom: 30px;
+    margin-right: 830px;
 }
 .real-name{
+    font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
     font-size: 16px;
     font-weight: bold;
@@ -63,6 +81,7 @@ body{
     transform-origin: right top;
 }
 .hero-name{
+    font-family: 'Playfair Display', serif;
     font-size: 48px;
     line-height: 64px;
     margin-bottom: 27px;
@@ -71,8 +90,6 @@ body{
 .short-info{
     font-size: 16px;
     line-height: 150%;
-    width: 460px;
-    margin-bottom: 30px;
 }
 .preview-button{
     font-size: 15px;
@@ -83,4 +100,47 @@ body{
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
+}
+.preview-button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 36px;
+	background: rgba(207, 75, 75, 0.3);
+	border-radius: 8px;
+	transition: all 2s ease;
+}
+.preview-button:hover:before {
+    width: 100%;
+}
+.preview-button:active, .preview-button:focus {
+    outline: none !important;
+  }
+.preview-button::-moz-focus-inner {
+    border: 0 !important;
+  }
+.actor-name{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+    padding-top: 46px;
+    margin-bottom: 40px;
+}
+.actor-short-info{
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+.abilities-list{
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+.abilities-item{
+    margin-bottom: 10px;
 }

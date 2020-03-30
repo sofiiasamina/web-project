@@ -15,24 +15,47 @@
     <div class="container">
         <header class="header animated fadeInLeft">
             <img src="./img/shield.png" alt="logo" class="logo">
-            <div class="header-about">About</div>
-            <div class="header-actor">Actor</div>
-            <div class="header-abilities">Abilities</div>
-            <div class="header-movies">Movies</div>    
+            <div class="header-tab-item tab-item-active" href="#About">About</div>
+            <div class="header-tab-item" href="#Actor">Actor</div>
+            <div class="header-tab-item" href="#Abilities">Abilities</div>   
         </header>
         <main class="main">
-            <div class="masthead-hero">
-                <h2 class="real-name animated fadeInLeft delay-0.5s">Tony Stark</h2>
-                <h1 class="hero-name animated fadeInLeft delay-1s">Iron Man</h1>
+            <div class="full-content">
+                <div class="content-block">
+                    <div class="header-tabs-content visible" id="About">
+                        <h2 class="real-name animated fadeInLeft delay-0.8s">Tony Stark</h2>
+                        <h1 class="hero-name animated fadeInLeft delay-1s">Iron Man</h1>
+                        <p class="short-info animated fadeInUp delay-2s">Genius. Billionaire. Playboy. Philanthropist. Tony Stark's confidence is only matched by his high-flying abilities as the hero called Iron Man.</p>
+                        <button data-fancybox href="https://youtu.be/LOFaJZitdho" class="preview-button animated fadeInUp delay-3s">Preview</button>
+                    </div>
+                </div>
+            <div class="content-block">
+                <div class="header-tabs-content" id="Actor">
+                    <h1 class="actor-name animated fadeInLeft delay-0.5s">Robert Downey Jr.</h1>
+                    <p class="actor-short-info animated fadeInUp delay-1s">Robert Downey, Jr., in full Robert John Downey, Jr., (born April 4, 1965, New York City, New York, U.S.), American actor considered one of Hollywood’s most gifted and versatile performers.</p>
+                </div>
             </div>
-            <div class="content">
-                <div class="short-info animated fadeInUp delay-2s">Genius. Billionaire. Playboy. Philanthropist. Tony Stark's confidence is only matched by his high-flying abilities as the hero called Iron Man.</div>
-                <button data-fancybox href="https://youtu.be/LOFaJZitdho" class="preview-button animated fadeInUp delay-3s">Preview</button>
+            <div class="content-block">
+                <div class="header-tabs-content" id="Abilities">
+                    <ul class="abilities-list animated fadeInLeft delay-0.5s">
+                        <li class="abilities-item">Genius-level intellect</li>
+                        <li class="abilities-item">Proficient scientist and engineer</li>
+                        <li class="abilities-item">  Powered armor suit:</li>
+                          <ul class="abilities-list-2 animated fadeInLeft delay-1s">
+                            <li class="abilities-item">   Superhuman strength and durability</li>
+                            <li class="abilities-item">  Supersonic flight</li>
+                            <li class="abilities-item"> Energy repulsor and missile projection</li>                   
+                            <li class="abilities-item"> Regenerative life support</li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             </div>
         </main>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
