@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){ //переключалка між табами About, Actor, Abilities
     let tabsItem = $('.header-tab-item');
 
     tabsItem.on('click', function(event) {
@@ -9,5 +9,9 @@ $(document).ready(function(){
         $('.tab-item-active').toggleClass('tab-item-active');
         $(this).toggleClass('tab-item-active');
     });
-
+    
+    $('.header-burger').click(function(event){
+        $('.header-burger, .header-menu').toggleClass('active');
+        $('.main').toggleClass('lock');
+    })
 });
