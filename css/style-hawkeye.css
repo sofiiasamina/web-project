@@ -4,7 +4,7 @@
 body{
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    background: url(../img/bg-ironman.jpg);
+    background: url(../img/bg-hawkeye.jpg);
     background-color: rgba(0,0,0,.5);
     background-blend-mode: darken;
     color: white;
@@ -39,7 +39,7 @@ body{
     cursor: pointer;
 }
 .tab-item-active{
-    color: #9D2929;
+    color: #1A932A;
     font-weight: bold;
 }
 .header-tabs-content{
@@ -100,7 +100,7 @@ body{
     line-height: 16px;
     text-decoration: none;
     color: #fff;
-    background: #9D2929;
+    background:#1A932A;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;

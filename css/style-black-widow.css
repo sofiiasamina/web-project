@@ -4,7 +4,7 @@
 body{
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    background: url(../img/bg-ironman.jpg);
+    background: url(../img/bg-blackwidow.jpg);
     background-color: rgba(0,0,0,.5);
     background-blend-mode: darken;
     color: white;
@@ -100,7 +100,7 @@ body{
     line-height: 16px;
     text-decoration: none;
     color: #fff;
-    background: #9D2929;
+    background:#9D2929;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
