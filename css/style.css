@@ -1,0 +1,141 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    margin: 0;
+}
+.wrapper{
+    opacity: 0;
+    transition: all 0.5s ease 0;
+    margin: 0;
+}
+.wrapper.active{
+    opacity: 1;
+}
+.wrapper.active .parallax{
+    opacity: 1;
+}
+.parallax{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    min-height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1.0s ease 1.0s;
+}
+.parallax-item{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 105%;
+    height: 105%;
+}
+.image-bg{
+    background: url(../img/layer-1.jpeg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.image-1{
+    background: url(../img/layer-2.png) right bottom no-repeat;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
+.title{
+    position: relative;
+    opacity: 0;
+    transition: all 1.0s ease 1.0s;
+}
+.wrapper.active .title{
+    opacity: 1;
+}
+.title .title-main{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin: 2%;
+}
+.title .description{
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+.container{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 1% 20%;
+    opacity: 0;
+    transition: all 1.0s ease 1.0s;
+}
+.wrapper.active .container{
+    opacity: 1;
+}
+.card{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card-item{
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.2s;
+    opacity: 1;
+    cursor: pointer;
+}
+.card-1{
+    background: url(../img/poster-ironman.jpg) no-repeat;
+    background-size: cover;
+}
+.card-2{
+    background: url(../img/poster-captainamerica.jpg) no-repeat;
+    background-size: cover;
+}
+.card-3{
+    background: url(../img/poster-thor.jpg) no-repeat;
+    background-size: cover;
+}
+.card-4{
+    background: url(../img/poster-blackwidow.jpg) no-repeat;
+    background-size: cover;
+}
+.card-5{
+    background: url(../img/poster-hulk.jpg) no-repeat;
+    background-size: cover;
+}
+.card-6{
+    background: url(../img/poster-hawkeye.jpg) no-repeat;
+    background-size: cover;
+}
+.card-item:hover{
+    opacity: 0.7;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    transition: 1s;
+}
+.card-name{
+    opacity: 0;
+    font-size: 28px;
+    line-height: 50%;
+    color: #ffffff;
+    text-align: center;
+    padding: 48% 0 47% 0;
+    margin: 0;
+}
+.card-name:hover{
+    opacity: 1;
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+}
