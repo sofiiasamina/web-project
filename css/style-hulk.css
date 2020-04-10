@@ -4,6 +4,7 @@
 body{
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    background: #000000;
     background: url(../img/bg-hulk.jpg);
     background-color: rgba(0,0,0,.5);
     background-blend-mode: darken;
