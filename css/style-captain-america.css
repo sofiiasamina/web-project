@@ -13,6 +13,7 @@ body{
     background-attachment: fixed;
     background-position-x: right;
     background-position-y: center;
+    overflow: hidden;
     margin:0;
     padding:0;
 }
