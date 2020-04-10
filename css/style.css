@@ -60,16 +60,9 @@ body{
     }
 }
 .wrapper{
-    opacity: 0;
-    transition: all 1s ease 1s;
     margin: 0 auto;
 }
-.wrapper.active{
-    opacity: 1;
-}
 .parallax{
-    opacity: 0;
-    transition: all 1s ease 1s;
     position:fixed;
     top:0;
     right:0;
@@ -77,9 +70,6 @@ body{
     left:0;
     min-height: 100vh;
     overflow: hidden;
-}
-.wrapper.active .parallax{
-    opacity: 1;
 }
 .parallax-item{
     position: absolute;
