@@ -2,7 +2,7 @@ $(window).on('load', function () {
     $preloader = $('.preloader'),
     $loader = $preloader.find('.prePreloader');
     $loader.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
+    $preloader.delay(250).fadeOut('slow');
 });
 
 const cards = document.querySelectorAll('.card');
