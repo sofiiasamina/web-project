@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body> 
+    <div class="preloader">
+    <div class="prePreloader"></div>
+    </div>
     <div class="wrapper">
         <div id="parallax" class="parallax">
             <div class="parallax-item image-bg" data-depth="0.05"></div>
@@ -48,22 +51,23 @@
             <p class="table-description">Phase 1</p>
         </div>
         <div class="table-content">
-        <table>
-            <tr><th>Movie</th><th>Universe Year</th><th>Release Year</th><th>IMDB</th></tr>
-            <tr><td>The Incredible Hulk</td><td>2011</td><td>2008</td><td>6.8</td></tr>
-            <tr><td>Iron Man</td><td>2010</td><td>2008</td><td>7.9</td></tr>
-            <tr><td>Iron Man 2</td><td>2011</td><td>2010</td><td>7.0</td></tr>
-            <tr><td>Captain America: First Avenger</td><td>1943</td><td>2011</td><td>6.9</td></tr>
-            <tr><td>Thor</td><td>2011</td><td>2011</td><td>7.0</td></tr>
-            <tr><td>Avengers</td><td>2012</td><td>2012</td><td>8.1</td></tr>
-        </table>
+            <table id="table-avengers">
+                <tr>
+                    <th>Movie</th>
+                    <th>Universe Year</th>
+                    <th>Release Year</th>
+                    <th>IMDB</th>
+                </tr>
+            </table>
         </div>
     </div>
     </div>
 
+    
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/jsonFunc.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

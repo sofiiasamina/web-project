@@ -7,18 +7,69 @@ body{
     color: #ffffff;
     margin: 0;
 }
+.preloader {
+    background: #000000;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 100000;
+}
+  .prePreloader{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+}
+  .prePreloader:before,.prePreloader:after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border: 8px solid rgba(255,255,255,.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+  .prePreloader:before {
+    animation: animate 4s infinite linear;
+}
+  @keyframes animate {
+    0% {
+      transform: rotate(0) skew(0);
+    }  
+    100% {
+      transform: rotate(180deg) skew(360deg);
+    }
+}
+  .prePreloader:after {
+    animation: animate2 4s infinite linear;
+}
+  @keyframes animate2 {
+    0% {
+      transform: rotate(0) skew(0);
+    }  
+    100% {
+      transform: rotate(-180deg) skew(-360deg);
+    }
+}
 .wrapper{
     opacity: 0;
-    transition: all 0.5s ease 0;
+    transition: all 1s ease 1s;
     margin: 0 auto;
 }
 .wrapper.active{
     opacity: 1;
 }
-.wrapper.active .parallax{
-    opacity: 1;
-}
 .parallax{
+    opacity: 0;
+    transition: all 1s ease 1s;
     position:fixed;
     top:0;
     right:0;
@@ -26,8 +77,9 @@ body{
     left:0;
     min-height: 100vh;
     overflow: hidden;
-    opacity: 0;
-    transition: all 1.0s ease 1.0s;
+}
+.wrapper.active .parallax{
+    opacity: 1;
 }
 .parallax-item{
     position: absolute;
@@ -49,11 +101,8 @@ body{
 }
 .title{
     position: relative;
-    opacity: 0;
-    transition: all 1.0s ease 1.0s;
-}
-.wrapper.active .title{
-    opacity: 1;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .title .title-main{
     font-family: 'Playfair Display', serif;
@@ -77,11 +126,6 @@ body{
     justify-content: space-around;
     max-width: 1000px;
     margin: 1% 20% 4% 20%;
-    opacity: 0;
-    transition: all 1.0s ease 1.0s;
-}
-.wrapper.active .container{
-    opacity: 1;
 }
 .card{
     perspective: 1000px;
@@ -89,10 +133,8 @@ body{
 }
 .card-item{
     margin: 5px;
-    width: 250px;
-    height: 250px;
-    transition: transform 0.2s;
-    opacity: 1;
+    width: 225px;
+    height: 225px;
     cursor: pointer;
 }
 .card-1{
@@ -143,7 +185,7 @@ a{
 }
 .table-title{
     position: relative;
-    padding: 1% 20%;
+    padding: 1% 5%;
 }
 .table-title-main{
     font-family: 'Playfair Display', serif;
@@ -159,4 +201,72 @@ a{
     color: #ffffff;
     text-align: center;
 }
-
+table{
+    text-align: center;
+}
+.first-row{
+    text-align: left;
+}
+th {
+    font-weight: normal;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+td {
+    color: #ffffff;
+    border-top: 1px solid rgba(118, 115, 120, 1);
+    padding: 10px 15px;
+}
+tr:hover td {
+    background-color: rgba(157,41,41, 0.3);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: 0 0 6px rgba(0,0,0,0.2) inset; 
+    background: rgb(2, 0, 8);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 1px solid rgb(2, 0, 8);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #9D2929;
+}
+@media(max-width: 1200px){
+    .table-title-main{
+        font-size: 40px;
+    }
+    .card-item{
+        width: 200px;
+        height: 200px;
+    }
+    .table-title{
+        margin-top: 16%;
+    }
+}
+@media(max-width: 768px){
+    .card-item{
+        width: 150px;
+        height: 150px;
+    }
+   .title .title-main{
+       font-size: 40px;
+   }
+    .title .description{
+       font-size: 14px;
+    }
+    .table-title-main{
+        font-size: 30px;
+    }
+    table{
+        font-size: 14px;
+    }
+}
+@media(max-width: 578px){
+    table{
+        font-size: 12px;
+    }
+    
+}

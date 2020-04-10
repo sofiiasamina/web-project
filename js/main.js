@@ -1,3 +1,11 @@
+
+  $(window).on('load', function () {
+    $preloader = $('.preloader'),
+      $loader = $preloader.find('.prePreloader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+
 const cards = document.querySelectorAll('.card');
 
 for (let i = 0; i < cards.length; i++) {
@@ -19,7 +27,6 @@ function stopRotate(event){
 }
 $(document).ready(function(){
     $('.wrapper').addClass('active');
-    
 
     var scene = document.getElementById('parallax');
     var parallaxInstance = new Parallax(scene);
