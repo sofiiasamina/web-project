@@ -19,7 +19,7 @@ body{
     bottom:0;
     z-index: 100000;
 }
-  .prePreloader{
+.prePreloader{
     height: 40px;
     width: 40px;
     position: absolute;
@@ -28,7 +28,7 @@ body{
     top: 50%;
     margin-top: -20px;
 }
-  .prePreloader:before,.prePreloader:after {
+.prePreloader:before,.prePreloader:after {
     content: "";
     height: 40px;
     width: 40px;
@@ -37,7 +37,7 @@ body{
     position: absolute;
     top: 0;
 }
-  .prePreloader:before {
+.prePreloader:before {
     animation: animate 4s infinite linear;
 }
   @keyframes animate {
@@ -48,7 +48,7 @@ body{
       transform: rotate(180deg) skew(360deg);
     }
 }
-  .prePreloader:after {
+.prePreloader:after {
     animation: animate2 4s infinite linear;
 }
   @keyframes animate2 {

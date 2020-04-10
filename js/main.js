@@ -1,10 +1,9 @@
-
-  $(window).on('load', function () {
+$(window).on('load', function () {
     $preloader = $('.preloader'),
       $loader = $preloader.find('.prePreloader');
     $loader.fadeOut();
     $preloader.delay(350).fadeOut('slow');
-  });
+});
 
 const cards = document.querySelectorAll('.card');
 
