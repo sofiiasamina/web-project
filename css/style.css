@@ -1,11 +1,18 @@
 *, *:before, *:after{
     box-sizing: border-box;
 }
+html{
+    overflow-y: hidden;
+}
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #000000;
     color: #ffffff;
     margin: 0;
+}
+body.fixed{
+    position:fixed; 
+    width:100%; 
 }
 .preloader {
     background: #000000;

@@ -3,6 +3,7 @@ $(window).on('load', function () {
     $loader = $preloader.find('.prePreloader');
     $loader.fadeOut();
     $preloader.delay(350).fadeOut('slow');
+    $('html').css('overflow-y', 'scroll');
 });
 
 const cards = document.querySelectorAll('.card');
