@@ -10,10 +10,6 @@ body{
     color: #ffffff;
     margin: 0;
 }
-body.fixed{
-    position:fixed; 
-    width:100%; 
-}
 .preloader {
     background: #000000;
     overflow: hidden;
